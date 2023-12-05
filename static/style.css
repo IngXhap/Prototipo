@@ -1,0 +1,98 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    background-color: rgba(123, 51, 195, 0.784); /* Color de fondo de la barra */
+    color: white; /* Color del texto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: rgba(48, 5, 85, 0.752);
+    margin: 0 5px;
+    width: 300px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+  
+  .navbar-center {
+    flex: 1; /* Esto expandirá el espacio del centro */
+    text-align: center;
+  }
+  
+  /* Estilos para el contenido de la página */
+  .content {
+    padding: 20px;
+    margin-top: 50px; /* Ajuste para dejar espacio para la barra de navegación */
+  }                                                                                          
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Text';
+}
+
+body {
+    background-color: rgba(255, 246, 246, 0.678);
+}
+
+.container {
+    background-color: rgb(55, 43, 161);
+    width: 90%;
+    margin: 32px auto;
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 16px;
+    max-width: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+    max-height: 300px;
+    justify-content: center;
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
+
+h1 {
+
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    padding: 16px 8px;
+}
+
+.boton {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+}
+.btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #0162FF;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0151d1;
+}

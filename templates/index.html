@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <title>Document</title>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-left">
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#nosotros">Nosotros</a>
+  </div>
+  <div class="navbar-center">
+    <img src="{% static "donitalo.jpg" %}" alt="">
+  </div>
+  <div class="navbar-right">
+    <!-- Enlaces acionales a la derecha si lo deseas -->
+  </div>
+</div>
+
+<div class="content">
+  <h1>Contenido de la página</h1>
+  <!-- Aquí va el resto del contenido -->
+</div>
+
+<h1>Tienda Online</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="{% static '1.jpg' %}" alt="Hoodie">
+            <div class="info">
+                <p>Laptop Asus RGX</p> <br>
+                <p>$2000</p>
+            </div>
+            <div class="boton">
+                <button id="btn" class="btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static '2.jpg' %}" alt="Hoddie">
+            <div class="info">
+                <p>Laptop Asus RGX</p> <br>
+                <p>$2000</p>
+            </div>
+            <div class="boton">
+                <button id="btn" class="btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static '/3.jpg' %}" alt="Hoodie">
+            <div class="info">
+                <p>Hoddie</p> <br>
+                <p>$2000</p>
+            </div>
+            <div class="boton">
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static '/4.jpg' %}" alt="Jeans">
+            <div class="info">
+                <p>Jeans</p> <br>
+                <p>$2000</p>
+            </div>
+            <div class="boton">
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{% static '/5.jpg' %}" alt="Polos">
+            <div class="info">
+                <p>Polos Verde</p> <br>
+                <p>$2000</p>
+            </div>
+            <div class="boton">
+                <button class="btn">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let btn = document.querySelector("#btn");
+
+        btn.addEventListener('click', () => {
+            alert("compraste ps")
+        })
+    </script>
+
+</body>
+
+</html>
